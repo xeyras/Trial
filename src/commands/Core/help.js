@@ -55,8 +55,8 @@ export async function createInitialHelpMenu(client) {
 
     const options = [
         {
-            label: "📋 All Commands",
-            description: "View all available commands with pagination",
+            label: "📋 All Command0s",
+            description: "View all available commands with ease bra!",
             value: ALL_COMMANDS_ID,
         },
         ...categoryDirs.map((category) => {
@@ -75,7 +75,7 @@ export async function createInitialHelpMenu(client) {
     const botName = client?.user?.username || "Bot";
     const embed = createEmbed({ 
         title: `🤖 ${botName} Help Center`,
-        description: "Your all-in-one Discord companion for moderation, economy, fun, and server management.",
+        description: "All IN ONE 😎",
         color: 'primary'
     });
 
@@ -87,7 +87,7 @@ export async function createInitialHelpMenu(client) {
         },
         {
             name: "💰 **Economy**",
-            value: "Currency system, shops, and virtual economy",
+            value: "Currency system, shops, and virtual economy, to cure b0red0m!",
             inline: true
         },
         {
@@ -158,7 +158,7 @@ export async function createInitialHelpMenu(client) {
     );
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "Made by Xeyras! 🦊" 
     });
     embed.setTimestamp();
 
@@ -169,17 +169,17 @@ export async function createInitialHelpMenu(client) {
 
     const supportButton = new ButtonBuilder()
         .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setURL("https://discord.gg/fqRxs9eS")
         .setStyle(ButtonStyle.Link);
 
     const touchpointButton = new ButtonBuilder()
         .setLabel("Learn from Touchpoint")
-        .setURL("https://www.youtube.com/@TouchDisc")
+        .setURL("https://www.youtube.com/@zeyras707")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(
         CATEGORY_SELECT_ID,
-        "Select to view the commands",
+        "Select to view the commands bra",
         options,
     );
 
@@ -198,7 +198,7 @@ export async function createInitialHelpMenu(client) {
 export default {
     data: new SlashCommandBuilder()
         .setName("help")
-        .setDescription("Displays the help menu with all available commands"),
+        .setDescription("Displays the help menu with all available commands, so u no boom ur head!"),
 
     async execute(interaction, guildConfig, client) {
         
@@ -216,7 +216,7 @@ export default {
             try {
                 const closedEmbed = createEmbed({
                     title: "Help menu closed",
-                    description: "Help menu has been closed, use /help again.",
+                    description: "Help menu has been closed, use /help again.Ez",
                     color: "secondary",
                 });
 
