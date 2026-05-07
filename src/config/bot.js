@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,10 +24,10 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        // Text users will see (example: "Playing /help | Xeyras Bot").
+        name: "Mashrur er dhon choto",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 3, 
       },
     ],
   },
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Xeyras bot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,9 +156,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Xsperms",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Xsperms",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -320,7 +320,7 @@ export const botConfig = {
       // Human-readable descriptions for each criteria mode.
       criteria: {
         account_age: "Account must be older than specified days",
-        server_size: "All users if server has less than 1000 members",
+        server_size: "All users if server has less than 10 members",
         none: "All users immediately"
       }
     },
@@ -421,13 +421,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "lmao ngha u got no sperms!",
+    cooldownActive: "chotto matte wth! {time} before using this command again.",
+    errorOccurred: "An sexm occurred while segsing this command.",
     missingPermissions:
-      "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+      "I am missing required sperms to perform this sexm.",
+    commandDisabled: "This command has been disabled, like you.",
+    maintenanceMode: "The bot is currently in Horny mode.",
   },
 
   // =========================
@@ -449,7 +449,7 @@ export const botConfig = {
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
+    verification: false,
     reactionRoles: true,
     joinToCreate: true,
 
