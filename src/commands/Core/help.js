@@ -82,7 +82,7 @@ export async function createInitialHelpMenu(client) {
         },
         {
             name: "💰 **Economy**",
-            value: "Currency system, shops, and virtual economy, to cure b0red0m!",
+            value: "Currency system, shops, and virtual economy",
             inline: true
         },
         {
@@ -153,7 +153,7 @@ export async function createInitialHelpMenu(client) {
     );
 
     embed.setFooter({
-        text: "Made by Xeyras! 🦊"
+        text: "Made by @juicew0rld_ 🦗"
     });
     embed.setTimestamp();
 
