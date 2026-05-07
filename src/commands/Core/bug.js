@@ -8,9 +8,10 @@ export default {
         .setDescription("Report a bug or issue with the bot"),
     async execute(interaction) {
         const discordButton = new ButtonBuilder()
-            .setLabel('🐛 Report Bug on Discord!')
-            .setStyle(ButtonStyle.Link)
-            .setURL('https://discord.gg/fqRxs9eS'); // ✅ already correct
+    .setLabel('🐛 Report Bug on Discord!')
+    .setStyle(ButtonStyle.Secondary) // not a link
+    .setCustomId('bug_report')       // required for non-link buttons
+    .setDisabled(true);              // ✅ this will work now
 
         const row = new ActionRowBuilder().addComponents(discordButton); // ✅ fixed variable name
 
