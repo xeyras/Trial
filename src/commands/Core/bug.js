@@ -17,13 +17,13 @@ export default {
 
         const bugReportEmbed = createEmbed({
             title: '?? Bug Report',
-            description: 'Found a bug? Please report it on our GitHub Issues page!\n\n' +
+            description: 'Found a bug? Please report it on @juicewo_ DM!\n\n' +
             '**When reporting a bug, please include:**\n' +
-            '• ?? Detailed description of the issue\n' +
-            '• ?? Steps to reproduce the problem\n' +
-            '• ?? Screenshots if applicable\n' +
-            '• ?? Your bot version and environment\n\n' +
-            'This helps us fix issues faster and more effectively!',
+            'â€¢ ?? Detailed description of the issue\n' +
+            'â€¢ ?? Steps to reproduce the pr0blemos\n' +
+            'â€¢ ?? Screenshots if applicable. cuz why not!\n' +
+            'â€¢ ?? Your bot version and environment ez\n\n' +
+            'This helps us fix issues faster and more effectively! EZ',
             color: 'error'
         })
             .setTimestamp();
