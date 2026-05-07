@@ -45,7 +45,7 @@ export default {
                 commandName: 'birthday_info'
             });
         } catch (error) {
-            logger.error("Birthday info command execution failed", {
+            logger.error("Birthday info command sexmcution failed", {
                 error: error.message,
                 stack: error.stack,
                 userId: interaction.user.id,
