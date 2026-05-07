@@ -162,9 +162,14 @@ export async function createInitialHelpMenu(client) {
         .setURL("https://discord.gg/fqRxs9eS")
         .setStyle(ButtonStyle.Link);
 
+    const touchpointButton = new ButtonBuilder()
+        .setLabel("Learn from Touchpoint")
+        .setURL("https://www.youtube.com/@zeyras707")
+        .setStyle(ButtonStyle.Link);
+
     const selectRow = createSelectMenu(
         CATEGORY_SELECT_ID,
-        "Select to view the commands",
+        "Select to view the commands bra",
         options,
     );
 
@@ -182,7 +187,7 @@ export async function createInitialHelpMenu(client) {
 export default {
     data: new SlashCommandBuilder()
         .setName("help")
-        .setDescription("Displays the help menu with all available commands!"),
+        .setDescription("Displays the help menu with all available commands, so u no boom ur head!"),
 
     async execute(interaction, guildConfig, client) {
         const { MessageFlags } = await import('discord.js');
@@ -199,7 +204,7 @@ export default {
             try {
                 const closedEmbed = createEmbed({
                     title: "Help menu closed",
-                    description: "Help menu has been closed, use /help again, Ez.",
+                    description: "Help menu has been closed, use /help again.Ez",
                     color: "secondary",
                 });
 
@@ -213,3 +218,4 @@ export default {
         }, HELP_MENU_TIMEOUT_MS);
     },
 };
+
