@@ -13,7 +13,7 @@ export default {
             .setStyle(ButtonStyle.Link)
             .setURL('https://discord.gg/fqRxs9eS');
 
-        const row = new ActionRowBuilder().addComponents(githubButton);
+        const row = new ActionRowBuilder().addComponents(discord);
 
         const bugReportEmbed = createEmbed({
             title: '?? Bug Report',
