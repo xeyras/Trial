@@ -9,9 +9,9 @@ export default {
 
     async execute(interaction) {
         const githubButton = new ButtonBuilder()
-            .setLabel('?? Report Bug on GitHub')
+            .setLabel('?? Report Bug on Discord!')
             .setStyle(ButtonStyle.Link)
-            .setURL('https://github.com/codebymitch/TitanBot/issues');
+            .setURL('https://discord.gg/fqRxs9eS');
 
         const row = new ActionRowBuilder().addComponents(githubButton);
 
