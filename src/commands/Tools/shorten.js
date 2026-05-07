@@ -8,7 +8,7 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 export default {
     data: new SlashCommandBuilder()
         .setName("shorten")
-        .setDescription("Shorten a URL using inx.bd")
+        .setDescription("Shorten a URL using is.gd")
         .addStringOption(option =>
             option
                 .setName("url")
