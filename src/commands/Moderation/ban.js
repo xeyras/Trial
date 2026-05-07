@@ -11,7 +11,7 @@ export default {
         .setDescription("Ban a user from the existence")
         .addUserOption((option) =>
             option
-                .setName("Victim")
+                .setName("target")
                 .setDescription("The user to ban")
                 .setRequired(true),
         )
