@@ -8,7 +8,7 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 export default {
     data: new SlashCommandBuilder()
         .setName("shorten")
-        .setDescription("Shorten a URL using is.gd")
+        .setDescription("Shorten a URL using inx.bd")
         .addStringOption(option =>
             option
                 .setName("url")
@@ -72,7 +72,7 @@ export default {
                 response = await fetch(apiUrl, {
                     signal: controller.signal,
                     headers: {
-                        'User-Agent': 'TitanBot URL Shortener/1.0'
+                        'User-Agent': 'INXCraft URL Shortener/1.0'
                     }
                 });
             } catch (networkError) {
