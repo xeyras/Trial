@@ -12,11 +12,11 @@ export default {
         .addUserOption((option) =>
             option
                 .setName("target")
-                .setDescription("The user to ban")
+                .setDescription("The user to nuke")
                 .setRequired(true),
         )
         .addStringOption((option) =>
-            option.setName("reason").setDescription("Reason for the ban"),
+            option.setName("reason").setDescription("Reason for the nuke"),
         )
 .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
     category: "moderation",
@@ -24,13 +24,13 @@ export default {
     async execute(interaction, config, client) {
         try {
             const user = interaction.options.getUser("target");
-            const reason = interaction.options.getString("reason") || "No reason provided";
+            const reason = interaction.options.getString("reason") || "No reason provided! bruh";
 
             if (user.id === interaction.user.id) {
-                throw new Error("You cannot ban yourself.");
+                throw new Error("Why Try to nuke yourself? lmao.");
             }
             if (user.id === client.user.id) {
-                throw new Error("You cannot ban the bot.");
+                throw new Error("You cannot ban the bot breh.");
             }
 
             
