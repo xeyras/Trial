@@ -35,8 +35,8 @@ export default {
         if (!interaction.member.permissions.has(PermissionFlagsBits.ModerateMembers)) {
             return InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
-                    title: '❌ Missing Permissions',
-                    description: 'You need the **Moderate Members** permission to mute users.',
+                    title: '❌ Missing Permissions breh',
+                    description: 'You need the **Moderate Members** permission to mute users!!.',
                     color: 'error'
                 })],
                 ephemeral: true
@@ -47,7 +47,7 @@ export default {
             return InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
                     title: '❌ User Not Found',
-                    description: 'That user could not be found in this server.',
+                    description: 'You trying to mute a ghost??.',
                     color: 'error'
                 })],
                 ephemeral: true
@@ -58,7 +58,7 @@ export default {
             return InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
                     title: '❌ Cannot Mute User',
-                    description: 'I cannot mute this user. They may have a higher role than me.',
+                    description: 'I cannot mute this user. They may have a higher role than me 😔',
                     color: 'error'
                 })],
                 ephemeral: true
@@ -69,7 +69,7 @@ export default {
             return InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
                     title: '❌ Invalid Target',
-                    description: 'You cannot mute yourself!',
+                    description: 'You cannot mute yourself 😂!',
                     color: 'error'
                 })],
                 ephemeral: true
@@ -96,7 +96,7 @@ export default {
             return InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
                     title: '❌ Duration Too Long',
-                    description: 'The maximum mute duration is **28 days**.',
+                    description: 'The maximum mute duration is **28 days**! why not kick/ban instead, Ez solution',
                     color: 'error'
                 })],
                 ephemeral: true
@@ -133,7 +133,7 @@ export default {
             await InteractionHelper.safeReply(interaction, {
                 embeds: [createEmbed({
                     title: '❌ Mute Failed',
-                    description: 'Something went wrong while trying to mute the user.',
+                    description: 'Something went wrong while trying to mute the user 🥲.',
                     color: 'error'
                 })],
                 ephemeral: true
