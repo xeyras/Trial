@@ -161,11 +161,6 @@ export async function createInitialHelpMenu(client) {
     });
     embed.setTimestamp();
 
-    const bugReportButton = new ButtonBuilder()
-        .setCustomId(BUG_REPORT_BUTTON_ID)
-        .setLabel("Report Bug")
-        .setStyle(ButtonStyle.Danger);
-
     const supportButton = new ButtonBuilder()
         .setLabel("Support Server")
         .setURL("https://discord.gg/fqRxs9eS")
@@ -180,13 +175,6 @@ export async function createInitialHelpMenu(client) {
         CATEGORY_SELECT_ID,
         "Select to view the commands bra",
         options,
-    );
-
-    const buttonRow = new ActionRowBuilder().addComponents([
-        bugReportButton,
-        supportButton,
-        touchpointButton,
-    ]);
 
     return {
         embeds: [embed],
