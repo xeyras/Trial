@@ -158,8 +158,8 @@ export async function createInitialHelpMenu(client) {
     embed.setTimestamp();
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Server")
-        .setURL("https://discord.gg/fqRxs9eS")
+        .setLabel("Create Ticket")
+        .setURL("https://discord.com/channels/1235116382337630300/1235116383155519497/1235971211763384330")
         .setStyle(ButtonStyle.Link);
 
     const touchpointButton = new ButtonBuilder()
