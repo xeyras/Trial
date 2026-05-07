@@ -176,6 +176,8 @@ export async function createInitialHelpMenu(client) {
         "Select to view the commands bra",
         options,
 
+    };
+
     return {
         embeds: [embed],
         components: [buttonRow, selectRow],
