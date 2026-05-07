@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Xeyras bot",
+      text: "juicew0rld_'s bot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -173,8 +173,8 @@ export const botConfig = {
     dailyAmount: 100,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 50,
+    workMax: 500,
 
     // Beg command random payout range.
     begMin: 5,
@@ -421,13 +421,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "lmao ngha u got no sperms!",
-    cooldownActive: "chotto matte wth! {time} before using this command again.",
-    errorOccurred: "An sexm occurred while segsing this command.",
+    noPermission: "Oops, you got no permission!",
+    cooldownActive: "Please wait {time} before using this command again.",
+    errorOccurred: "An error occurred while executing this command.",
     missingPermissions:
-      "I am missing required sperms to perform this sexm.",
-    commandDisabled: "This command has been disabled, like you.",
-    maintenanceMode: "The bot is currently in Horny mode.",
+      "I am missing required perms to perform this command.",
+    commandDisabled: "This command has been disabled!.",
+    maintenanceMode: "The bot is currently in maintenance mode.",
   },
 
   // =========================
@@ -437,7 +437,7 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: true,
-    leveling: true,
+    leveling: false,
     moderation: true,
     logging: true,
     welcome: true,
@@ -454,7 +454,7 @@ export const botConfig = {
     joinToCreate: true,
 
     // Utility/quality-of-life modules.
-    voice: true,
+    voice: false,
     search: true,
     tools: true,
     utility: true,
