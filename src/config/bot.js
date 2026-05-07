@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Xeyras Bot").
-        name: "Mashrur er dhon choto",
+        name: "Admin Xeyras is coolest!",
         // Activity type number (0 = Playing).
-        type: 3, 
+        type: 1, 
       },
     ],
   },
