@@ -1,4 +1,4 @@
-﻿import {
+import {
     SlashCommandBuilder,
     ActionRowBuilder,
     ButtonBuilder,
@@ -39,10 +39,6 @@ const CATEGORY_ICONS = {
     Config: "⚙️",
 };
 
-
-
-
-
 export async function createInitialHelpMenu(client) {
     const commandsPath = path.join(__dirname, "../../commands");
     const categoryDirs = (
@@ -72,7 +68,7 @@ export async function createInitialHelpMenu(client) {
     ];
 
     const botName = client?.user?.username || "Bot";
-    const embed = createEmbed({ 
+    const embed = createEmbed({
         title: `🤖 ${botName} Help Center`,
         description: "All IN ONE 😎",
         color: 'primary'
@@ -156,8 +152,8 @@ export async function createInitialHelpMenu(client) {
         }
     );
 
-    embed.setFooter({ 
-        text: "Made by Xeyras! 🦊" 
+    embed.setFooter({
+        text: "Made by Xeyras! 🦊"
     });
     embed.setTimestamp();
 
@@ -175,8 +171,12 @@ export async function createInitialHelpMenu(client) {
         CATEGORY_SELECT_ID,
         "Select to view the commands bra",
         options,
+    );
 
-    };
+    const buttonRow = new ActionRowBuilder().addComponents(
+        supportButton,
+        touchpointButton
+    );
 
     return {
         embeds: [embed],
@@ -190,10 +190,9 @@ export default {
         .setDescription("Displays the help menu with all available commands, so u no boom ur head!"),
 
     async execute(interaction, guildConfig, client) {
-        
         const { MessageFlags } = await import('discord.js');
         await InteractionHelper.safeDefer(interaction);
-        
+
         const { embeds, components } = await createInitialHelpMenu(client);
 
         await InteractionHelper.safeEditReply(interaction, {
@@ -214,10 +213,8 @@ export default {
                     components: [],
                 });
             } catch (error) {
-                
+                // silently handle timeout errors
             }
         }, HELP_MENU_TIMEOUT_MS);
     },
 };
-
-
