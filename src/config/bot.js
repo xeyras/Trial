@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "dnd",
+    status: "online",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Xeyras Bot").
-        name: "Admin Xeyras is coolest!",
+        name: "Xeyras stole Cyber739's Burger 😂!",
         // Activity type number (0 = Playing).
-        type: 1, 
+        type: 3, 
       },
     ],
   },
