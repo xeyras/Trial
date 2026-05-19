@@ -25,7 +25,7 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Xeyras Bot").
-        name: "DM Xeyras if you want a custom bot!!",
+        name: "1+1=11! yus!",
         // Activity type number (0 = Playing).
         type: 3, 
       },
